@@ -41,6 +41,7 @@ export default function Home() {
 
   return (
     <div className="home">
+      
       <h2>Articles</h2>      
       {articles && articles.map(article => (
         <div key={article.id} className="card">
@@ -52,6 +53,9 @@ export default function Home() {
             onClick={() => handleDelete(article.id)}
             src={DeleteIcon} alt="delete icon" 
           />
+          <Link to={`/edit/${article.id}`}>
+              <button>Edit</button>
+            </Link>
         </div>
       ))}
     </div>

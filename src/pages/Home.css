@@ -17,3 +17,19 @@
     width: 3%;
     height: 3%;
   }
+
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
